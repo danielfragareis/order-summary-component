@@ -1,0 +1,69 @@
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--paleBlue);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: absolute;
+    height: 500px;
+    width: 330px;
+    border: 1px solid red;
+    border-radius: 15px;
+    background-color: var(--veryPaleBlue);
+    text-align: center;
+}
+
+
+section {
+    margin: 0 20px;
+    background-color: aquamarine;
+    padding: 0 8%;
+}
+
+.image img {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    width: 78%;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: hsla(225, 100%, 94%, 0.5); */
+    background-color: blueviolet;
+    padding: 0 5%;
+}
+ 
+.plan  h2 {
+    border-color: blueviolet;
+    background-color: blue;
+}
+
+.plan span {
+    display: inline;
+    color: var(--desaturatedBlue);
+    font-size: 0.6em;
+}
+
