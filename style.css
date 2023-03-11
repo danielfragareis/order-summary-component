@@ -26,22 +26,21 @@ body {
 main {
     height: 530px;
     width: 330px;
-    border: 1px solid red;
     border-radius: 15px;
     background-color: white;
     text-align: center;
     margin: 0 auto;
+    box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.400)
 }
 
 
 section {
     margin: 0 20px;
-    /* padding: 0 4%; */
 }
 
 .image img {
     width: 100%;
-    height: 150px;
+    height: 25%;
     border-radius: 15px 15px 0 0;
     margin-bottom: 1.5em;
 }
@@ -58,7 +57,7 @@ section {
     font-weight: 500;
     font-size: 1em;
     line-height: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 5%;
     padding: 0 4%;
 }
 
@@ -67,11 +66,10 @@ section {
     display: flex;
     flex-direction: row;
     width: 78%;
-    height: 70px;
+    height: 13%;
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
-    border: 1px solid red;
     background-color: var(--veryPaleBlue);
     padding: 0 5%;
     margin-bottom: 1.3em;
@@ -93,15 +91,12 @@ section {
 .plan a {
     color: var(--brightBlue);
     font-size: 0.8em;
+    cursor: pointer;
 }
 
-.payment {
-
-}
-
-.payment button {
+.payment button:first-child {
     border-radius: 10px;
-    border: 1px solid red;
+    border: none;
     height: 45px;
     width: 100%;
     background-color: var(--brightBlue);
@@ -109,11 +104,45 @@ section {
     font-weight: 900;
     font-size: 0.9em;
     margin-bottom: 1.4em;
+    box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.400);
+    cursor: pointer;
 }
 
-.payment h3 {
+.payment button:first-child:hover {
+    background-color: hsla(245, 75%, 52%, 0.600);
+    color: white;
+    transition: 300ms;
+}
+
+.payment button#cancel {
     font-weight: 900;
     color: var(--desaturatedBlue);
     font-size: 0.9em;
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 
+.payment button#cancel:hover {
+    color: var(--darkBlue);
+    transition: 300ms;
+}
+
+@media  (min-width: 600px) {
+    body {
+        background: var(--paleBlue) url(images/pattern-background-desktop.svg) repeat-x;
+    }
+    
+    main {
+        width: 380px;
+        height: 560px;
+    }
+
+    section {
+        margin: 0 30px;
+    }
+
+    .plan {
+        width: 74%;
+    }
+}
